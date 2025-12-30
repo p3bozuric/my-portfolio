@@ -115,7 +115,7 @@ export default function Navigation() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-foreground p-2"
+              className="md:hidden text-foreground p-2 col-start-3 justify-self-end"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
             >
