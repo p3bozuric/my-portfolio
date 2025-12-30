@@ -54,11 +54,11 @@ export const projects = [
   },
   {
     id: 2,
-    name: "eCOLREG Assistant",
+    name: "COLREG Assistant",
     description: "RAG powered GenAI for maritime industry. Powered by knowledge on COLREG rules and Gemini.",
     technologies: ["RAG", "Gemini", "GenAI", "Maritime"],
     github: "https://github.com/p3bozuric/colreg-assistant",
-    demo: null,
+    demo: "https://colregs.bozuric.com/",
   },
   {
     id: 3,
