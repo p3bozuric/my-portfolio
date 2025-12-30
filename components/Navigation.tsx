@@ -51,11 +51,11 @@ export default function Navigation() {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Bozuric Logo"
                 width={200}
                 height={200}
-                className="h-20 md:h-24 w-auto"
+                className="h-12 md:h-14 w-auto"
               />
             </motion.a>
 

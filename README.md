@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Template
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 16, Tailwind CSS, and Framer Motion. Fork this project to create your own professional portfolio.
 
-First, run the development server:
+## Features
+
+- Responsive design (mobile, tablet, desktop)
+- Smooth animations with Framer Motion
+- Dark theme with customizable colors
+- Particle background effect
+- Sections: Hero, About, Technologies, Projects, Experience, Education, Contact
+- SEO-friendly
+
+## Quick Start
+
+### 1. Fork & Clone
+
+```bash
+# Fork this repository on GitHub, then clone your fork
+git clone https://github.com/p3bozuric/my-portfolio.git
+cd my-portfolio
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view your portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All personal content is centralized in the `data/content.ts` file:
 
-## Learn More
+| Section | What to Edit |
+|---------|--------------|
+| Personal Info | Name, email, social links |
+| About Me | Introduction, description, specialties |
+| Technologies | Your tech stack |
+| Projects | Project titles, descriptions, links |
+| Experience | Work history |
+| Education | Degrees, certifications |
 
-To learn more about Next.js, take a look at the following resources:
+### Assets to Replace
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `public/logo.svg` - Your logo
+- `public/favicon.svg` - Browser tab icon
+- `app/favicon.ico` - Fallback favicon (delete or replace)
+- `public/resume.pdf` - Your resume
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Theme Colors
 
-## Deploy on Vercel
+Edit `tailwind.config.ts` to customize colors:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```ts
+colors: {
+  primary: "#your-color",
+  secondary: "#your-color",
+  accent: "#your-color",
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy to Vercel
+
+### Option 1: One-Click Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/p3bozuric/my-portfolio)
+
+### Option 2: Manual Deploy
+
+1. Push your customized portfolio to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
+3. Click "Add New Project"
+4. Import your portfolio repository
+5. Click "Deploy"
+
+Your portfolio will be live at `https://your-project.vercel.app`
+
+### Custom Domain
+
+1. In Vercel dashboard, go to your project Settings > Domains
+2. Add your custom domain (e.g., `yourname.com`)
+3. Update DNS records as instructed by Vercel
+
+## Tech Stack
+
+- [Next.js 16](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [React Icons](https://react-icons.github.io/react-icons/) - Icon library
+
+## License
+
+MIT - Feel free to use this template for your own portfolio.
