@@ -10,11 +10,13 @@ export const personalInfo = {
 
 export const aboutMe = {
   intro: "AI dev with a unique maritime background, leveraging my Master's in Nautical Studies to bring fresh perspectives to AI and machine learning projects.",
-  description: "I combine rapid learning ability with cross-industry insights to deliver innovative solutions.",
+  description: "I combine rapid learning ability with cross-industry insights to deliver innovative solutions. I love working with data, figure out the right approach and implement it. My goal is to bridge the gap between traditional industries and cutting-edge AI technologies, creating impactful solutions that drive progress.",
   specialties: [
     "AI development and integration",
-    "Integration of AI in existing processes",
-    "Creation of AI workflows & processes",
+    "Machine Learning model implementation",
+    "Integration of AI in existing business processes",
+    "n8n workflow automation",
+    "ETL pipelines and data management",
     "Maintenance of web shops (Visualsoft and Shopify)",
   ],
   personal: "I love my wife, cat & horse.",

@@ -20,7 +20,7 @@ export default function SectionWrapper({
     <section
       id={id}
       // Add 'flex flex-col items-center' here
-      className={`py-32 md:py-40 w-full flex flex-col items-center ${className}`}
+      className={`py-32 md:py-20 w-full flex flex-col items-center ${className}`}
     >
       {/* The mx-auto here will now work correctly within the flex parent */}
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20">

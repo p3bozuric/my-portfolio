@@ -19,7 +19,7 @@ export default function About() {
         </Card>
 
         <Card delay={0.2}>
-          <h3 className="text-2xl font-semibold mb-6 text-primary gap-8">
+          <h3 className="text-3xl font-semibold mb-6 text-primary text-center md:py-4">
             What I Do
           </h3>
           <div className="grid md:grid-cols-2 gap-8">

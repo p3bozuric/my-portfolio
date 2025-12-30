@@ -46,8 +46,8 @@ export default function Contact() {
         <Card>
           <div className="text-center space-y-6">
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-              I'm always interested in hearing about new projects and
-              opportunities. Whether you have a question or just want to say hi,
+              I'm always interested in hearing about new projects,
+              opportunities and ideas. Whether you have a question or just want to say hi,
               feel free to reach out!
             </p>
 
@@ -61,7 +61,7 @@ export default function Contact() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  transition={{ duration: 0.2, delay: index * 0.05 }}
                   whileHover={{ scale: 1.05, y: -5 }}
                   className={`backdrop-blur-sm bg-background-secondary border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 ${link.color}`}
                 >
@@ -76,7 +76,7 @@ export default function Contact() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className="pt-8 space-y-4 max-w-lg mx-auto"
             >
               <input
@@ -97,7 +97,7 @@ export default function Contact() {
                 onClick={handleEmailClick}
                 className="w-full bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full font-medium text-base hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
               >
-                Send me an email
+                Open in your email client
               </button>
             </motion.div>
           </div>
