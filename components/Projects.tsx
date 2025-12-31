@@ -3,7 +3,7 @@
 import SectionWrapper from "./ui/SectionWrapper";
 import Card from "./ui/Card";
 import { projects } from "@/data/content";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { HiClock } from "react-icons/hi";
 
 export default function Projects() {
@@ -56,10 +56,13 @@ export default function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-foreground/70 hover:text-secondary transition-colors duration-200"
+                    className="flex items-center space-x-2 px-3 py-1 bg-secondary/20 border border-secondary text-secondary rounded-full hover:bg-secondary hover:text-white transition-all duration-200"
                   >
-                    <FaExternalLinkAlt className="w-4 h-4" />
-                    <span className="text-sm font-medium">Demo</span>
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                    </span>
+                    <span className="text-sm font-medium">Live Demo</span>
                   </a>
                 )}
               </div>
