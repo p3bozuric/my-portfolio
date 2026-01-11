@@ -55,8 +55,8 @@ export const projects = [
   {
     id: 2,
     name: "COLREG Assistant",
-    description: "RAG powered GenAI for maritime industry. Powered by knowledge on COLREG rules and Gemini.",
-    technologies: ["RAG", "Gemini", "LangGraph", "FastAPI", "Vercel"],
+    description: "Maritime navigation chatbot specializing in COLREGs with interactive visual aids and voice input. Features vessel light animations, day shapes visualization, and sound signal playback with real-time streaming responses.",
+    technologies: ["Next.js", "FastAPI", "LangGraph", "Supabase", "OpenAI", "RAG"],
     github: "https://github.com/p3bozuric/colreg-assistant",
     demo: "https://colregs.bozuric.com/",
   },
