@@ -74,14 +74,22 @@ export const projects = [
 export const workExperience = [
   {
     id: 1,
-    role: "Junior AI Developer",
+    role: "AI Consultant",
     company: "ASEE",
-    period: "March 2025 - Present",
+    period: "January 2026 - Present",
     location: "Remote",
     current: true,
   },
   {
     id: 2,
+    role: "Junior AI Developer",
+    company: "ASEE",
+    period: "March 2025 - December 2025",
+    location: "Remote",
+    current: false,
+  },
+  {
+    id: 3,
     role: "Founder",
     company: "KodAI",
     period: "October 2024 - Present",
@@ -89,7 +97,7 @@ export const workExperience = [
     current: true,
   },
   {
-    id: 3,
+    id: 4,
     role: "Internship",
     company: "AI Power d.o.o.",
     period: "June 2024 - September 2024",
@@ -97,7 +105,7 @@ export const workExperience = [
     current: false,
   },
   {
-    id: 4,
+    id: 5,
     role: "Internship",
     company: "AI Centre Lipik",
     period: "March 2024 - September 2024",
