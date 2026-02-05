@@ -62,11 +62,11 @@ export const projects = [
   },
   {
     id: 3,
-    name: "AIDRIATIC",
-    description: "Project in development, still figuring out the exact project structure.",
-    technologies: ["Real Estate", "AI", "Monitoring"],
-    github: "https://github.com/p3bozuric/aidriatic-real-etate-monitor",
-    demo: null,
+    name: "ClawHarbor",
+    description: "Personal AI Assistant deployment service for OpenClaw.",
+    technologies: ["AI", "Deployment", "OpenClaw"],
+    github: null,
+    demo: "https://clawharbor.io",
     inProgress: true,
   },
 ];
