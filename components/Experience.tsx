@@ -36,6 +36,19 @@ export default function Experience() {
               <HiLocationMarker className="w-4 h-4" />
               <p className="text-sm">{job.location}</p>
             </div>
+            {job.description && job.description.length > 0 && (
+              <ul className="mt-4 space-y-2">
+                {job.description.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start space-x-3 text-foreground/80"
+                  >
+                    <span className="text-primary mt-1.5 flex-shrink-0">•</span>
+                    <span className="leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </Card>
         ))}
       </div>

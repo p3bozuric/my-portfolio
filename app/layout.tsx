@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Patrik Božurić | AI Developer",
-  description: "AI Developer with a unique maritime background, specializing in AI integration, machine learning, and innovative AI solutions. Master's degree in Nautical Studies.",
-  keywords: ["AI Developer", "Machine Learning", "GenAI", "LangChain", "FastAPI", "Python", "Maritime AI", "Patrik Božurić"],
+  title: "Patrik Božurić | AI Deployment & Consultation",
+  description: "I deploy AI solutions for clients and own the relationship that gets them into production — voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
+  keywords: ["AI Deployment", "AI Consultant", "voice agents", "LLM integration", "RAG", "ElevenLabs", "LangChain", "LiveKit", "Python", "FastAPI", "AI adoption", "Patrik Božurić"],
   authors: [{ name: "Patrik Božurić" }],
   creator: "Patrik Božurić",
   icons: {
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://bozuric.com",
-    title: "Patrik Božurić | AI Developer",
-    description: "AI Developer with a unique maritime background, specializing in AI integration and machine learning.",
+    title: "Patrik Božurić | AI Deployment & Consultation",
+    description: "I deploy AI solutions for clients and own the relationship that gets them into production — voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
     siteName: "Patrik Božurić Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Patrik Božurić | AI Developer",
-    description: "AI Developer specializing in AI integration and machine learning solutions.",
+    title: "Patrik Božurić | AI Deployment & Consultation",
+    description: "I deploy AI solutions for clients and own the relationship that gets them into production — voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
   },
   robots: {
     index: true,

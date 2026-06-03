@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Patrik Božurić",
-  title: "AI Developer",
-  tagline: "AI dev with a unique maritime background",
+  title: "AI Deployment & Consultation",
+  tagline: "Voice agents & LLM solutions — deployed for clients, owned to production.",
   email: "pbozuric@outlook.com",
   github: "https://github.com/p3bozuric",
   linkedin: "https://www.linkedin.com/in/pbozuric/",
@@ -9,15 +9,15 @@ export const personalInfo = {
 };
 
 export const aboutMe = {
-  intro: "AI dev with a unique maritime background, leveraging my Master's in Nautical Studies to bring fresh perspectives to AI and machine learning projects.",
-  description: "I combine rapid learning ability with cross-industry insights to deliver innovative solutions. I love working with data, figure out the right approach and implement it. My goal is to bridge the gap between traditional industries and cutting-edge AI technologies, creating impactful solutions that drive progress.",
+  intro: "I deploy AI solutions for clients and own the relationship that gets them into production. I sit between business stakeholders and engineering teams — scoping the real problem, shaping the use case, and translating complex technical concepts for non-technical decision-makers.",
+  description: "I deliver voice and chat agents, automate operational workflows, and drive adoption. I can also build what I propose, prototyping and demoing on production AI stacks myself, so what I bring to clients is working software, not slideware. My maritime background — a Master's in Nautical Studies — lets me bridge traditional industries and cutting-edge AI.",
   specialties: [
-    "AI development and integration",
-    "Machine Learning model implementation",
-    "Integration of AI in existing business processes",
-    "n8n workflow automation",
-    "ETL pipelines and data management",
-    "Maintenance of web shops (Visualsoft and Shopify)",
+    "Deploying AI solutions for clients, end-to-end to production",
+    "Consulting on AI adoption and internal AI tooling",
+    "Building and delivering voice agents (voicebots)",
+    "Integrating LLMs and AI into existing products and workflows",
+    "Process automation",
+    "Prototyping and demoing on production AI stacks",
   ],
   personal: "I love my wife, cat & horse.",
 };
@@ -46,11 +46,13 @@ export const technologies = [
 export const projects = [
   {
     id: 1,
-    name: "No Code Headshot Generator",
-    description: "My oldest project based on FLUX.1-dev. It's essentially a Jupyter notebook setup, with no coding necessary with purpose of fine-tuning FLUX.1-dev and generating personal professional images for LinkedIn.",
-    technologies: ["FLUX.1-dev", "Jupyter", "AI", "Image Generation"],
-    github: "https://github.com/p3bozuric/headshot_generator",
-    demo: null,
+    name: "AIDRIATIC",
+    description: "Maritime intelligence platform spanning three streams: Office, Bridge, and Analysis.",
+    technologies: ["AI", "Maritime Intelligence"],
+    github: null,
+    demo: "https://aidriatic.com",
+    inProgress: true,
+    status: "In Progress",
   },
   {
     id: 2,
@@ -68,6 +70,7 @@ export const projects = [
     github: null,
     demo: "https://clawharbor.io",
     inProgress: true,
+    status: "Paused project",
   },
 ];
 
@@ -79,14 +82,25 @@ export const workExperience = [
     period: "January 2026 - Present",
     location: "Remote",
     current: true,
+    description: [
+      "Advise clients on applying AI to operational and customer-facing workflows; own delivery from prototype to production.",
+      "Consult on internal AI tooling implementations and AI adoption.",
+      "Deliver voicebot solutions for clients.",
+    ],
   },
   {
     id: 2,
-    role: "Junior AI Developer",
+    role: "AI Developer",
     company: "ASEE",
     period: "March 2025 - December 2025",
     location: "Remote",
     current: false,
+    description: [
+      "Integrated ElevenLabs voice AI into existing customer experience (CX) products.",
+      "Prepared and ran product demos for prospective clients, presenting AI capabilities to non-technical audiences.",
+      "Built a product documentation deployment on Zensical, with a pipeline to maintain the docs semi-automatically.",
+      "Automated internal business processes (e.g. incoming email classification).",
+    ],
   },
   {
     id: 3,
@@ -95,22 +109,6 @@ export const workExperience = [
     period: "October 2024 - Present",
     location: "Remote",
     current: true,
-  },
-  {
-    id: 4,
-    role: "Internship",
-    company: "AI Power d.o.o.",
-    period: "June 2024 - September 2024",
-    location: "Lipik, Croatia",
-    current: false,
-  },
-  {
-    id: 5,
-    role: "Internship",
-    company: "AI Centre Lipik",
-    period: "March 2024 - September 2024",
-    location: "Lipik, Croatia",
-    current: false,
   },
 ];
 

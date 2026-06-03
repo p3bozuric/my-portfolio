@@ -16,7 +16,7 @@ export default function Projects() {
               {project.inProgress && (
                 <div className="flex items-center space-x-2 text-accent mb-3">
                   <HiClock className="w-4 h-4" />
-                  <span className="text-sm font-medium">In Development</span>
+                  <span className="text-sm font-medium">{project.status}</span>
                 </div>
               )}
 
