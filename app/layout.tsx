@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Patrik Božurić | AI Deployment & Consultation",
-  description: "I deploy AI solutions for clients and own the relationship that gets them into production — voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
+  description: "I deploy AI solutions for clients and own the relationship that gets them into production - voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
   keywords: ["AI Deployment", "AI Consultant", "voice agents", "LLM integration", "RAG", "ElevenLabs", "LangChain", "LiveKit", "Python", "FastAPI", "AI adoption", "Patrik Božurić"],
   authors: [{ name: "Patrik Božurić" }],
   creator: "Patrik Božurić",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://bozuric.com",
     title: "Patrik Božurić | AI Deployment & Consultation",
-    description: "I deploy AI solutions for clients and own the relationship that gets them into production — voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
+    description: "I deploy AI solutions for clients and own the relationship that gets them into production - voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
     siteName: "Patrik Božurić Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Patrik Božurić | AI Deployment & Consultation",
-    description: "I deploy AI solutions for clients and own the relationship that gets them into production — voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
+    description: "I deploy AI solutions for clients and own the relationship that gets them into production - voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
   },
   robots: {
     index: true,

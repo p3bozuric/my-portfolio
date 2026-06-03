@@ -18,12 +18,12 @@ export default function Education() {
                   <h3 className="text-xl font-bold text-foreground">
                     {edu.degree}
                   </h3>
-                  {edu.inProgress && (
+                  {"inProgress" in edu && edu.inProgress ? (
                     <span className="px-3 py-1 bg-accent/20 border border-accent text-accent text-xs font-medium rounded-full flex items-center space-x-1">
                       <HiClock className="w-3 h-3" />
                       <span>In Progress</span>
                     </span>
-                  )}
+                  ) : null}
                 </div>
                 <p className="text-lg font-semibold text-primary/80 mb-1">
                   {edu.field}

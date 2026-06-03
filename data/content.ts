@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Patrik Božurić",
   title: "AI Deployment & Consultation",
-  tagline: "Voice agents & LLM solutions — deployed for clients, owned to production.",
+  tagline: "Voice agents and other AI solutions - reach out.",
   email: "pbozuric@outlook.com",
   github: "https://github.com/p3bozuric",
   linkedin: "https://www.linkedin.com/in/pbozuric/",
@@ -9,12 +9,12 @@ export const personalInfo = {
 };
 
 export const aboutMe = {
-  intro: "I deploy AI solutions for clients and own the relationship that gets them into production. I sit between business stakeholders and engineering teams — scoping the real problem, shaping the use case, and translating complex technical concepts for non-technical decision-makers.",
-  description: "I deliver voice and chat agents, automate operational workflows, and drive adoption. I can also build what I propose, prototyping and demoing on production AI stacks myself, so what I bring to clients is working software, not slideware. My maritime background — a Master's in Nautical Studies — lets me bridge traditional industries and cutting-edge AI.",
+  intro: "I deploy AI solutions for clients and own the relationship that gets them into production. I sit between business stakeholders and engineering teams - scoping the real problem, shaping the use case, and translating complex technical concepts for non-technical decision-makers.",
+  description: "I deliver voice and chat agents, automate operational workflows, and drive adoption. I can also build what I propose, prototyping and demoing on production AI stacks myself, so what I bring to clients is working software, not slideware. My maritime background - a Master's in Nautical Studies - lets me bridge traditional industries and cutting-edge AI.",
   specialties: [
-    "Deploying AI solutions for clients, end-to-end to production",
+    "Deploying AI solutions for clients",
     "Consulting on AI adoption and internal AI tooling",
-    "Building and delivering voice agents (voicebots)",
+    "Building and delivering voice agents",
     "Integrating LLMs and AI into existing products and workflows",
     "Process automation",
     "Prototyping and demoing on production AI stacks",
@@ -83,9 +83,10 @@ export const workExperience = [
     location: "Remote",
     current: true,
     description: [
-      "Advise clients on applying AI to operational and customer-facing workflows; own delivery from prototype to production.",
+      "Advise clients on applying AI to operational and customer-facing workflows.",
+      "Own delivery from prototype to production.",
       "Consult on internal AI tooling implementations and AI adoption.",
-      "Deliver voicebot solutions for clients.",
+      "Deliver voice agent solutions for clients.",
     ],
   },
   {
@@ -96,7 +97,7 @@ export const workExperience = [
     location: "Remote",
     current: false,
     description: [
-      "Integrated ElevenLabs voice AI into existing customer experience (CX) products.",
+      "Integrated ElevenLabs solutions within our products.",
       "Prepared and ran product demos for prospective clients, presenting AI capabilities to non-technical audiences.",
       "Built a product documentation deployment on Zensical, with a pipeline to maintain the docs semi-automatically.",
       "Automated internal business processes (e.g. incoming email classification).",
@@ -109,6 +110,9 @@ export const workExperience = [
     period: "October 2024 - Present",
     location: "Remote",
     current: true,
+    description: [
+      "AI Consultancy",
+    ],
   },
 ];
 
@@ -137,15 +141,6 @@ export const education = [
     period: "Issued October 2025",
     achievements: [],
     credential: "https://learn.nvidia.com/certificates?id=_T_MZJRQQja79EMSgYTnqA#",
-  },
-  {
-    id: 4,
-    degree: "PSM1 (Professional Scrum Master I)",
-    field: "Certification",
-    institution: "In Progress",
-    period: "Expected 2025",
-    achievements: [],
-    inProgress: true,
   },
 ];
 
