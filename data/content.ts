@@ -2,6 +2,7 @@ export const personalInfo = {
   name: "Patrik Božurić",
   title: "AI Deployment & Consultation",
   tagline: "Voice agents and other AI solutions - reach out.",
+  footerTagline: "Here for AI consultancy and adoption - from the first use case to a team that uses AI every day.",
   email: "pbozuric@outlook.com",
   github: "https://github.com/p3bozuric",
   linkedin: "https://www.linkedin.com/in/pbozuric/",
@@ -22,25 +23,28 @@ export const aboutMe = {
   personal: "I love my wife, cat & horse.",
 };
 
+// The first entries are shown while the Skills section is collapsed.
 export const technologies = [
+  { name: "Claude Code", category: "AI/ML" },
+  { name: "Codex", category: "AI/ML" },
   { name: "Python", category: "Programming" },
+  { name: "LangChain", category: "AI/ML" },
+  { name: "ElevenLabs", category: "AI/ML" },
+  { name: "Livekit", category: "Real-time" },
+  { name: "GenAI", category: "AI/ML" },
   { name: "FastAPI", category: "Framework" },
+  { name: "n8n", category: "Automation" },
   { name: "PostgreSQL", category: "Database" },
   { name: "Docker", category: "DevOps" },
   { name: "PyTorch", category: "AI/ML" },
-  { name: "n8n", category: "Automation" },
-  { name: "Figma", category: "Design" },
-  { name: "GenAI", category: "AI/ML" },
-  { name: "LangChain", category: "AI/ML" },
-  { name: "Livekit", category: "Real-time" },
-  { name: "ElevenLabs", category: "AI/ML" },
+  { name: "Hugging Face", category: "AI/ML" },
   { name: "AWS", category: "Cloud" },
   { name: "Vercel", category: "Cloud" },
-  { name: "Hugging Face", category: "AI/ML" },
   { name: "Redis", category: "Database" },
   { name: "Supabase", category: "Backend" },
   { name: "REST API", category: "Backend" },
   { name: "Git", category: "DevOps" },
+  { name: "Figma", category: "Design" },
 ];
 
 export const projects = [
@@ -65,12 +69,12 @@ export const projects = [
   {
     id: 3,
     name: "ClawHarbor",
-    description: "Personal AI Assistant deployment service for OpenClaw.",
-    technologies: ["AI", "Deployment", "OpenClaw"],
+    description: "MCP-as-a-service. One crawl of a business website publishes a hosted MCP endpoint and a WebMCP page, so AI agents in ChatGPT, Claude, or the browser can use the site's real actions. Every tool is tested against the live site before it ships.",
+    technologies: ["MCP", "MCP Apps", "WebMCP", "TypeScript"],
     github: null,
     demo: "https://clawharbor.io",
     inProgress: true,
-    status: "Paused project",
+    status: "In Progress",
   },
 ];
 

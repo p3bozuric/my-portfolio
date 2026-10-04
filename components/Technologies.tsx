@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import SectionWrapper from "./ui/SectionWrapper";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { technologies } from "@/data/content";
 import {
   FaHtml5,
@@ -24,9 +25,11 @@ import {
   SiN8N,
   SiLangchain,
   SiHuggingface,
+  SiClaude,
 } from "react-icons/si";
 import { TbBrandOpenai, TbApi } from "react-icons/tb";
 import { RiVoiceprintFill } from "react-icons/ri";
+import { HiChevronDown, HiSparkles } from "react-icons/hi";
 import { BsCameraVideo } from "react-icons/bs";
 import { IconType } from "react-icons";
 
@@ -48,47 +51,95 @@ const techIcons: { [key: string]: IconType } = {
   Redis: SiRedis,
   Supabase: SiSupabase,
   Git: FaGitAlt,
-  GenAI: TbBrandOpenai,
+  GenAI: HiSparkles,
   LangChain: SiLangchain,
   LangGraph: SiLangchain,
   Livekit: BsCameraVideo,
   ElevenLabs: RiVoiceprintFill,
   "Hugging Face": SiHuggingface,
   "REST API": TbApi,
+  "Claude Code": SiClaude,
+  Codex: TbBrandOpenai,
 };
 
+// Number of technologies visible while the section is collapsed
+const COLLAPSED_COUNT = 6;
+
 export default function Technologies() {
+  const [expanded, setExpanded] = useState(false);
+  const visible = expanded
+    ? technologies
+    : technologies.slice(0, COLLAPSED_COUNT);
+  const hiddenCount = technologies.length - COLLAPSED_COUNT;
+
   return (
     <SectionWrapper id="skills" title="Technologies & Skills">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 max-w-6xl mx-auto">
-        {technologies.map((tech, index) => {
-          const Icon = techIcons[tech.name];
-          return (
-            <motion.div
-              key={tech.name}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: index * 0.05 }}
-              whileHover={{ scale: 1.1, y: -5 }}
-              className="group"
-            >
-              <div className="backdrop-blur-sm bg-card-bg border border-border rounded-xl p-6 text-center hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 flex flex-col items-center justify-center h-32">
-                {Icon ? (
-                  <Icon className="w-12 h-12 mb-3 text-primary group-hover:text-secondary transition-colors duration-300" />
-                ) : (
-                  <div className="w-12 h-12 mb-3 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white font-bold text-xl">
-                    {tech.name.charAt(0)}
-                  </div>
-                )}
-                <p className="text-sm font-medium text-foreground/80 group-hover:text-primary transition-colors duration-300">
-                  {tech.name}
-                </p>
-              </div>
-            </motion.div>
-          );
-        })}
-      </div>
+      <motion.div
+        layout
+        id="skills-grid"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 max-w-6xl mx-auto"
+      >
+        <AnimatePresence initial={false}>
+          {visible.map((tech, index) => {
+            const Icon = techIcons[tech.name];
+            // Items revealed by expanding animate immediately; the initial
+            // row animates when the section scrolls into view.
+            const revealed = index >= COLLAPSED_COUNT;
+            const delay = revealed
+              ? (index - COLLAPSED_COUNT) * 0.03
+              : index * 0.05;
+            return (
+              <motion.div
+                key={tech.name}
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                {...(revealed
+                  ? { animate: { opacity: 1, scale: 1 } }
+                  : { whileInView: { opacity: 1, scale: 1 } })}
+                exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.15 } }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay }}
+                whileHover={{ scale: 1.1, y: -5 }}
+                className="group"
+              >
+                <div className="backdrop-blur-sm bg-card-bg border border-border rounded-xl p-6 text-center hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 flex flex-col items-center justify-center h-32">
+                  {Icon ? (
+                    <Icon className="w-12 h-12 mb-3 text-primary group-hover:text-secondary transition-colors duration-300" />
+                  ) : (
+                    <div className="w-12 h-12 mb-3 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white font-bold text-xl">
+                      {tech.name.charAt(0)}
+                    </div>
+                  )}
+                  <p className="text-sm font-medium text-foreground/80 group-hover:text-primary transition-colors duration-300">
+                    {tech.name}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
+      </motion.div>
+
+      {hiddenCount > 0 && (
+        <div className="flex justify-center mt-10">
+          <button
+            type="button"
+            onClick={() => setExpanded((prev) => !prev)}
+            aria-expanded={expanded}
+            aria-controls="skills-grid"
+            className="flex items-center space-x-2 px-6 py-3 border border-primary/50 text-primary rounded-full hover:bg-primary/10 hover:border-primary transition-all duration-300"
+          >
+            <span className="text-sm font-medium">
+              {expanded ? "Show less" : `Show all ${technologies.length}`}
+            </span>
+            <HiChevronDown
+              className={`w-5 h-5 transition-transform duration-300 ${
+                expanded ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+        </div>
+      )}
     </SectionWrapper>
   );
 }

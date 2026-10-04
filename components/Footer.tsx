@@ -24,7 +24,7 @@ export default function Footer() {
               </span>
             </h3>
             <p className="text-foreground/70 text-sm">
-              {personalInfo.tagline}
+              {personalInfo.footerTagline}
             </p>
           </div>
 
