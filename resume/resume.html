@@ -5,27 +5,27 @@
 
 <style>
 
-@page{size:A4;margin:14mm 16mm 11mm}*{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:0}*{box-sizing:border-box;margin:0;padding:0}
 html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.job,.proj,.edu,.row>h2{break-inside:avoid}
+body{width:210mm;height:297mm;overflow:hidden}
 ul{list-style:none}a{text-decoration:none;color:inherit}
 .jh,.eh{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .date{white-space:nowrap}
 .chips{display:flex;flex-wrap:wrap;gap:4px}
 
 :root{--ink:#111;--body:#2b2b2b;--muted:#7a7a7a;--accent:#0e7490;--rule:#d9d9d9}
-body{font-family:"Liberation Sans",Arial,sans-serif;font-size:9.7pt;line-height:1.45;color:var(--body);background:#fff}
-header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--ink);padding-bottom:10px}
-h1{font-family:"Liberation Serif",Georgia,serif;font-size:32pt;font-weight:400;color:var(--ink);line-height:1;letter-spacing:-.5px}
+body{font-family:"Liberation Sans",Arial,sans-serif;font-size:9pt;line-height:1.36;color:var(--body);background:#fff;padding:10mm 14mm 9mm}
+header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--ink);padding-bottom:7px}
+h1{font-family:"Liberation Serif",Georgia,serif;font-size:28pt;font-weight:400;color:var(--ink);line-height:1;letter-spacing:-.5px}
 .role{font-family:"Liberation Serif",Georgia,serif;font-style:italic;color:var(--accent);font-size:11.5pt;margin-top:6px}
-.contact{text-align:right;font-size:8pt;color:#555;line-height:1.45}
-.row{display:grid;grid-template-columns:30mm 1fr;column-gap:7mm;padding:11px 0;border-bottom:1px solid var(--rule)}
+.contact{text-align:right;font-size:7.6pt;color:#555;line-height:1.35}
+.row{display:grid;grid-template-columns:26mm 1fr;column-gap:6mm;padding:7px 0;border-bottom:1px solid var(--rule)}
 .row:last-child{border-bottom:0}
 .row>h2{font-family:"Liberation Serif",Georgia,serif;font-weight:400;font-style:italic;font-size:11.5pt;color:var(--ink);line-height:1.2}
-.job+.job{margin-top:8px}
+.job+.job{margin-top:5px}
 .jt{font-weight:700;color:var(--ink);font-size:10.2pt}.org{color:var(--muted);margin-left:6px;font-size:8.8pt}
 .date{color:var(--muted);font-size:8.3pt;font-variant-numeric:tabular-nums}
-li{position:relative;padding-left:12px;margin-top:1.5px}li::before{content:"–";position:absolute;left:0;color:var(--accent)}
+li{position:relative;padding-left:12px;margin-top:1px}li::before{content:"–";position:absolute;left:0;color:var(--accent)}
 .two{display:grid;grid-template-columns:1fr 1fr;column-gap:7mm}
 h3{font-size:7.4pt;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
 .list{color:var(--body)}
@@ -39,39 +39,37 @@ h3{font-size:7.4pt;letter-spacing:1.4px;text-transform:uppercase;color:var(--mut
 <header><div><h1>Patrik Božurić</h1><div class="role">AI Adoption &amp; Deployment</div></div>
 <div class="contact">Sisak, Croatia<br><a href="mailto:pbozuric@outlook.com">pbozuric@outlook.com</a><br>+385 99 284 9205<br><a href="https://bozuric.com">bozuric.com</a><br><a href="https://www.linkedin.com/in/pbozuric/">linkedin.com/in/pbozuric</a><br><a href="https://github.com/p3bozuric">github.com/p3bozuric</a></div></header>
 
-<div class="row"><h2>Profile</h2><p>I get AI adopted. I work with clients and internal teams to find the use cases worth doing, define them, roll them out and support people until AI is part of their daily work. I integrated ElevenLabs voice agents into a production contact-centre platform and helped clients and teams adopt them. I sit between business stakeholders and engineering, and I can build what I propose, so clients see a working proof of concept before they commit.</p><!-- TODO metric: voice agents in production / calls handled per month --></div>
+<div class="row"><h2>Profile</h2><p>I get AI adopted. I work with clients and internal teams to find the use cases worth doing, define them, roll them out and support people until AI is part of their daily work. Much of my work is voice AI for customer contact, including voice agents in a live contact-centre platform. I sit between business stakeholders and engineering, and I can build what I propose, so clients see a working proof of concept before they commit.</p></div>
 
 <div class="row"><h2>Experience</h2><div>
 <div class="job"><div class="jh"><div><span class="jt">AI Consultant</span><span class="org">ASEE Solutions · Remote</span></div><span class="date">Jan 2026 - Present</span></div><ul>
-<li>Identify and define AI use cases with clients; translate business needs into technical requirements for the dev team.</li><!-- TODO metric: AI use cases defined / taken to production -->
-<li>Advise on bringing AI tools into employees' daily work and support teams through adoption.</li><!-- TODO metric: employees/teams onboarded, active users of AI tools -->
-<li>Deliver voice AI agents for clients, from scenario definition and functional spec to production.</li><!-- TODO metric: voice agents in production / calls per month / containment rate -->
-<li>Coordinate and track AI features on the ASEE Live platform: AI agent assist, AI agent integration, knowledge base, call transcription, post-call analytics.</li><!-- TODO metric: adoption of AI features on ASEE Live -->
-<li>Built internal AI tools (MCP servers) connecting AI assistants to internal business systems; rolled them out to colleagues and supported them.</li><!-- TODO metric: colleagues using internal MCP tools / weekly active users -->
+<li>Identify and define AI use cases with clients; translate business needs into technical requirements for the dev team.</li>
+<li>Advise on bringing AI tools into employees' daily work and support teams through adoption.</li>
+<li>Deliver voice AI agents for clients, from scenario definition and functional spec to production.</li>
+<li>Coordinate and track AI features on the ASEE Live platform: AI agent assist, AI agent integration, knowledge base, call transcription, post-call analytics.</li>
+<li>Built internal AI tools (MCP servers) connecting AI assistants to internal business systems; rolled them out to colleagues and supported them.</li>
 <li>Work with AI vendors on technical evaluation, commercial models and GDPR compliance.</li>
 <li>Evaluate alternatives: open-source voice agent frameworks (Pipecat, LiveKit Agents), speech recognition (Faster Whisper), Croatian TTS (fine-tuning XTTS v2).</li>
-<li>Presales: technical consulting, proposals, presentations and proof-of-concept demos; live demos and talks at conferences.</li><!-- TODO metric: proposals / PoCs delivered, conference talks given -->
+<li>Presales: technical consulting, proposals, presentations and proof-of-concept demos; live demos and talks at conferences.</li>
 </ul></div>
 <div class="job"><div class="jh"><div><span class="jt">AI Developer</span><span class="org">ASEE Solutions · Remote</span></div><span class="date">Mar 2025 - Dec 2025</span></div><ul>
 <li>Integrated ElevenLabs conversational AI and voice agents into the ASEE Live platform.</li>
 <li>Built LLM and RAG-based solutions.</li>
-<li>Automated internal processes, e.g. automatic classification and routing of incoming email.</li><!-- TODO metric: emails classified/routed per month, accuracy, hours saved -->
+<li>Automated internal processes, e.g. automatic classification and routing of incoming email.</li>
 <li>Built a product documentation system on Zensical with a semi-automated content maintenance process.</li>
-<li>Prepared and ran product demos for prospects; presented AI capabilities to non-technical audiences.</li><!-- TODO metric: number of product demos run -->
+<li>Prepared and ran product demos for prospects; presented AI capabilities to non-technical audiences.</li>
 </ul></div>
 <div class="job"><div class="jh"><div><span class="jt">Founder</span><span class="org">KodAI · Remote</span></div><span class="date">Nov 2024 - Present</span></div><ul>
-<li>Independent AI consulting and implementation for small and medium businesses.</li><!-- TODO metric: clients / projects delivered -->
+<li>Independent AI consulting and implementation for small and medium businesses.</li>
 <li>Run AI integration and automation projects end to end: needs analysis, build, client communication, delivery.</li>
-<li>Advise on applying LLMs and RAG in business; business process automation (n8n, Python, REST API integrations).</li><!-- TODO metric: hours saved per month by automations -->
+<li>Advise on applying LLMs and RAG in business; business process automation (n8n, Python, REST API integrations).</li>
 </ul></div>
-<div class="job"><div class="jh"><div><span class="jt">Intern</span><span class="org">AI Center Lipik</span></div><span class="date">Apr 2024 - Sep 2024</span></div><ul>
+<div class="job"><div class="jh"><div><span class="jt">Intern</span><span class="org">AI Center Lipik · On-site</span></div><span class="date">Apr 2024 - Sep 2024</span></div><ul>
 <li>Computer vision models (object detection and classification in images and video), dataset preparation and labelling, LLM/RAG prototypes; Python with PyTorch, Hugging Face and OpenCV.</li>
 </ul></div>
 </div></div>
 
-<div class="row"><h2>Capabilities</h2><div class="two"><div><h3>AI adoption &amp; enablement</h3><p class="list">Use case discovery, business value assessment, rollout and change management, team training and support, functional specs, presales and PoCs, vendor management, GDPR in AI solutions.</p><h3 style="margin-top:6px">Languages</h3><p>Croatian: native &nbsp;·&nbsp; English: C1</p></div><div><h3>Technical</h3><p class="list">ElevenLabs, LiveKit, Pipecat, MCP, LangChain / LangGraph, RAG, n8n, LLM integration, voice agents, Claude Code, Codex, Python, FastAPI, REST APIs, PyTorch, Hugging Face, Docker, AWS.</p></div></div></div>
-
-<div class="row"><h2>Projects</h2><div><div class="proj"><div><span class="pn">ClawHarbor</span><span class="tag">in progress</span></div><p>MCP-as-a-service. One crawl of a business website publishes a hosted MCP endpoint and a WebMCP page that AI agents can call. <a href="https://clawharbor.io">clawharbor.io</a></p></div><div class="proj"><div><span class="pn">AIDRIATIC</span><span class="tag">in progress</span></div><p>Maritime intelligence platform with three streams: Office, Bridge, and Analysis. <a href="https://aidriatic.com">aidriatic.com</a></p></div><div class="proj"><div><span class="pn">COLREG Assistant</span><span class="tag">live</span></div><p>Maritime navigation assistant (RAG) with voice input, streaming answers, and interactive visual aids. <a href="https://colregs.bozuric.com">colregs.bozuric.com</a></p></div></div></div>
+<div class="row"><h2>Capabilities</h2><div class="two"><div><h3>AI adoption &amp; enablement</h3><p class="list">Use case discovery, business value assessment, rollout and change management, team training and support, functional specs, presales and PoCs, vendor management, GDPR in AI solutions.</p><h3 style="margin-top:6px">Languages</h3><p>Croatian: native &nbsp;·&nbsp; English: C1</p></div><div><h3>Technical</h3><p class="list">LLM integration, RAG, voice agents, MCP, LangChain / LangGraph, LiveKit, Pipecat, ElevenLabs, n8n, Claude Code, Codex, Python, FastAPI, REST APIs, PyTorch, Hugging Face, Docker, AWS.</p></div></div></div>
 
 <div class="row"><h2>Education</h2><div><div class="edu"><div class="eh"><div><span class="en">M.Sc. Nautical Studies &amp; Maritime Transport Technology</span><span class="org">University of Rijeka</span></div><span class="date">2020 - 2022</span></div><div class="note">Dean's Award for Academic Excellence</div></div><div class="edu"><div class="eh"><div><span class="en">B.Sc. Nautical Studies &amp; Maritime Transport Technology</span><span class="org">University of Rijeka</span></div><span class="date">2017 - 2020</span></div></div><div class="edu"><div class="eh"><div><span class="en">Adding Knowledge to LLMs</span><span class="org">NVIDIA Professional Certificate</span></div><span class="date">2025</span></div></div><div class="edu"><div class="eh"><div><span class="en">Ongoing self-directed AI training</span></div><span class="date">Ongoing</span></div><div class="note">LLM engineering, agents and MCP, production deployment</div></div></div></div>
 

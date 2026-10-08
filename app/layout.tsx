@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Patrik Božurić | AI Adoption & Deployment",
-  description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions. Integrated ElevenLabs voice agents into a production contact-centre platform.",
+  description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions.",
   keywords: ["AI Adoption", "AI Enablement", "AI Deployment", "AI Consultant", "voice agents", "LLM integration", "RAG", "ElevenLabs", "LangChain", "LiveKit", "Pipecat", "MCP", "Python", "FastAPI", "AI adoption", "Patrik Božurić"],
   authors: [{ name: "Patrik Božurić" }],
   creator: "Patrik Božurić",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://bozuric.com",
     title: "Patrik Božurić | AI Adoption & Deployment",
-    description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions. Integrated ElevenLabs voice agents into a production contact-centre platform.",
+    description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions.",
     siteName: "Patrik Božurić Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Patrik Božurić | AI Adoption & Deployment",
-    description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions. Integrated ElevenLabs voice agents into a production contact-centre platform.",
+    description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions.",
   },
   robots: {
     index: true,

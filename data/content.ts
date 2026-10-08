@@ -1,8 +1,7 @@
 export const personalInfo = {
   name: "Patrik Božurić",
   title: "AI Adoption & Deployment",
-  // TODO metric: number of voice agents in production / calls handled per month
-  tagline: "I've integrated ElevenLabs voice agents into a production contact-centre platform and helped clients and teams adopt them.",
+  tagline: "I take AI from use case to production, including voice agents in a live contact-centre platform, and help teams adopt it.",
   footerTagline: "Here for AI consultancy and adoption - from the first use case to a team that uses AI every day.",
   email: "pbozuric@outlook.com",
   github: "https://github.com/p3bozuric",
@@ -12,8 +11,7 @@ export const personalInfo = {
 
 export const aboutMe = {
   intro: "I get AI adopted. I work with clients and internal teams to find the use cases worth doing, define them, roll them out and support people until AI is part of their daily work. I sit between business stakeholders and engineering, translating business needs into technical requirements and technical concepts for non-technical decision-makers.",
-  // TODO metric: use cases taken to production / teams or users onboarded to AI tools
-  description: "Most of my work is voice AI for customer contact: I integrated ElevenLabs voice agents into a production contact-centre platform and now deliver voice agents for clients from scenario definition to production. I can also build what I propose, so clients see a working proof of concept before they commit. My maritime background - a Master's in Nautical Studies - helps me bridge traditional industries and AI.",
+  description: "Much of my work is voice AI for customer contact: I integrated voice agents into a production contact-centre platform and now deliver them for clients from scenario definition to production. I can also build what I propose, so clients see a working proof of concept before they commit. My maritime background - a Master's in Nautical Studies - helps me bridge traditional industries and AI.",
   specialties: [
     "AI use case discovery and definition",
     "Rollout, enablement and team support for AI tools",
@@ -39,12 +37,12 @@ export const adoptionSkills = [
 
 // The first entries are shown while the Skills section is collapsed.
 export const technologies = [
-  { name: "ElevenLabs", category: "AI/ML" },
-  { name: "LiveKit", category: "Real-time" },
-  { name: "Pipecat", category: "Real-time" },
   { name: "MCP", category: "AI/ML" },
   { name: "LangGraph", category: "AI/ML" },
   { name: "RAG", category: "AI/ML" },
+  { name: "LiveKit", category: "Real-time" },
+  { name: "Pipecat", category: "Real-time" },
+  { name: "ElevenLabs", category: "AI/ML" },
   { name: "n8n", category: "Automation" },
   { name: "Claude Code", category: "AI/ML" },
   { name: "Codex", category: "AI/ML" },
@@ -110,19 +108,13 @@ export const workExperience = [
     location: "Remote",
     current: true,
     description: [
-      // TODO metric: number of AI use cases defined / taken to production
       "Identify and define AI use cases with clients; translate business needs into technical requirements for the dev team.",
-      // TODO metric: employees/teams onboarded, active users of AI tools
       "Advise on bringing AI tools into employees' daily work and support teams through adoption.",
-      // TODO metric: number of voice agents in production / calls handled per month / containment rate
       "Deliver voice AI agents for clients, from scenario definition and functional spec to production.",
-      // TODO metric: adoption of AI features on ASEE Live (e.g. share of agents using agent assist, calls transcribed per month)
       "Coordinate and track AI features on the ASEE Live platform: AI agent assist, AI agent integration, knowledge base, call transcription, post-call analytics.",
-      // TODO metric: number of colleagues using the internal MCP tools / weekly active users
       "Built internal AI tools (MCP servers) connecting AI assistants to internal business systems; rolled them out to colleagues and supported them.",
       "Work with AI vendors on technical evaluation, commercial models and GDPR compliance.",
       "Evaluate alternatives: open-source voice agent frameworks (Pipecat, LiveKit Agents), speech recognition (Faster Whisper), Croatian TTS (fine-tuning XTTS v2).",
-      // TODO metric: proposals / PoCs delivered, conference talks given
       "Presales: technical consulting, proposals, presentations and proof-of-concept demos; live demos and talks at conferences.",
     ],
   },
@@ -136,10 +128,8 @@ export const workExperience = [
     description: [
       "Integrated ElevenLabs conversational AI and voice agents into the ASEE Live platform.",
       "Built LLM and RAG-based solutions.",
-      // TODO metric: emails classified/routed per month, accuracy, hours saved
       "Automated internal processes, e.g. automatic classification and routing of incoming email.",
       "Built a product documentation system on Zensical with a semi-automated content maintenance process.",
-      // TODO metric: number of product demos run
       "Prepared and ran product demos for prospects; presented AI capabilities to non-technical audiences.",
     ],
   },
@@ -151,11 +141,9 @@ export const workExperience = [
     location: "Remote",
     current: true,
     description: [
-      // TODO metric: number of clients / projects delivered
       "Independent AI consulting and implementation for small and medium businesses.",
       "Run AI integration and automation projects end to end: needs analysis, build, client communication, delivery.",
       "Advise on applying LLMs and RAG in business.",
-      // TODO metric: hours saved per month by automations
       "Business process automation (n8n, Python, REST API integrations).",
     ],
   },
@@ -164,7 +152,7 @@ export const workExperience = [
     role: "Intern",
     company: "AI Center Lipik",
     period: "April 2024 - September 2024",
-    location: "",
+    location: "Lipik, Croatia",
     current: false,
     description: [
       "Computer vision models (object detection and classification in images and video), dataset preparation and labelling.",
