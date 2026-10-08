@@ -32,10 +32,12 @@ export default function Experience() {
                 <p className="font-medium">{job.period}</p>
               </div>
             </div>
-            <div className="flex items-center space-x-2 text-foreground/60">
-              <HiLocationMarker className="w-4 h-4" />
-              <p className="text-sm">{job.location}</p>
-            </div>
+            {job.location && (
+              <div className="flex items-center space-x-2 text-foreground/60">
+                <HiLocationMarker className="w-4 h-4" />
+                <p className="text-sm">{job.location}</p>
+              </div>
+            )}
             {job.description && job.description.length > 0 && (
               <ul className="mt-4 space-y-2">
                 {job.description.map((item, i) => (

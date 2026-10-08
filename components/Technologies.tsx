@@ -3,7 +3,7 @@
 import { useState } from "react";
 import SectionWrapper from "./ui/SectionWrapper";
 import { motion, AnimatePresence } from "framer-motion";
-import { technologies } from "@/data/content";
+import { technologies, adoptionSkills } from "@/data/content";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -27,9 +27,15 @@ import {
   SiHuggingface,
   SiClaude,
 } from "react-icons/si";
-import { TbBrandOpenai, TbApi } from "react-icons/tb";
+import {
+  TbBrandOpenai,
+  TbApi,
+  TbPlugConnected,
+  TbDatabaseSearch,
+  TbMicrophone,
+} from "react-icons/tb";
 import { RiVoiceprintFill } from "react-icons/ri";
-import { HiChevronDown, HiSparkles } from "react-icons/hi";
+import { HiChevronDown, HiSparkles, HiUserGroup } from "react-icons/hi";
 import { BsCameraVideo } from "react-icons/bs";
 import { IconType } from "react-icons";
 
@@ -54,7 +60,10 @@ const techIcons: { [key: string]: IconType } = {
   GenAI: HiSparkles,
   LangChain: SiLangchain,
   LangGraph: SiLangchain,
-  Livekit: BsCameraVideo,
+  LiveKit: BsCameraVideo,
+  Pipecat: TbMicrophone,
+  MCP: TbPlugConnected,
+  RAG: TbDatabaseSearch,
   ElevenLabs: RiVoiceprintFill,
   "Hugging Face": SiHuggingface,
   "REST API": TbApi,
@@ -63,7 +72,7 @@ const techIcons: { [key: string]: IconType } = {
 };
 
 // Number of technologies visible while the section is collapsed
-const COLLAPSED_COUNT = 6;
+const COLLAPSED_COUNT = 12;
 
 export default function Technologies() {
   const [expanded, setExpanded] = useState(false);
@@ -74,6 +83,31 @@ export default function Technologies() {
 
   return (
     <SectionWrapper id="skills" title="Technologies & Skills">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="max-w-6xl mx-auto mb-10 backdrop-blur-sm bg-card-bg border border-border rounded-xl p-6 md:p-8"
+      >
+        <div className="flex items-center justify-center space-x-2 mb-5">
+          <HiUserGroup className="w-6 h-6 text-primary" />
+          <h3 className="text-xl md:text-2xl font-semibold text-primary">
+            AI Adoption &amp; Enablement
+          </h3>
+        </div>
+        <div className="flex flex-wrap justify-center gap-3">
+          {adoptionSkills.map((skill) => (
+            <span
+              key={skill}
+              className="px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-sm font-medium text-foreground/80"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </motion.div>
+
       <motion.div
         layout
         id="skills-grid"

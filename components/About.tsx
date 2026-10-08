@@ -3,7 +3,7 @@
 import SectionWrapper from "./ui/SectionWrapper";
 import Card from "./ui/Card";
 import { aboutMe } from "@/data/content";
-import { FaCheckCircle, FaHeart } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function About() {
   return (

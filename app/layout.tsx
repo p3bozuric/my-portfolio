@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Patrik Božurić | AI Deployment & Consultation",
-  description: "I deploy AI solutions for clients and own the relationship that gets them into production - voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
-  keywords: ["AI Deployment", "AI Consultant", "voice agents", "LLM integration", "RAG", "ElevenLabs", "LangChain", "LiveKit", "Python", "FastAPI", "AI adoption", "Patrik Božurić"],
+  title: "Patrik Božurić | AI Adoption & Deployment",
+  description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions. Integrated ElevenLabs voice agents into a production contact-centre platform.",
+  keywords: ["AI Adoption", "AI Enablement", "AI Deployment", "AI Consultant", "voice agents", "LLM integration", "RAG", "ElevenLabs", "LangChain", "LiveKit", "Pipecat", "MCP", "Python", "FastAPI", "AI adoption", "Patrik Božurić"],
   authors: [{ name: "Patrik Božurić" }],
   creator: "Patrik Božurić",
   icons: {
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://bozuric.com",
-    title: "Patrik Božurić | AI Deployment & Consultation",
-    description: "I deploy AI solutions for clients and own the relationship that gets them into production - voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
+    title: "Patrik Božurić | AI Adoption & Deployment",
+    description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions. Integrated ElevenLabs voice agents into a production contact-centre platform.",
     siteName: "Patrik Božurić Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Patrik Božurić | AI Deployment & Consultation",
-    description: "I deploy AI solutions for clients and own the relationship that gets them into production - voice agents, LLM integration, and AI adoption. Self-taught into a professional AI role, with a maritime background.",
+    title: "Patrik Božurić | AI Adoption & Deployment",
+    description: "AI adoption and deployment: use case discovery, rollout and team enablement for voice agents and LLM solutions. Integrated ElevenLabs voice agents into a production contact-centre platform.",
   },
   robots: {
     index: true,

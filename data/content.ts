@@ -1,7 +1,8 @@
 export const personalInfo = {
   name: "Patrik Božurić",
-  title: "AI Deployment & Consultation",
-  tagline: "Voice agents and other AI solutions - reach out.",
+  title: "AI Adoption & Deployment",
+  // TODO metric: number of voice agents in production / calls handled per month
+  tagline: "I've integrated ElevenLabs voice agents into a production contact-centre platform and helped clients and teams adopt them.",
   footerTagline: "Here for AI consultancy and adoption - from the first use case to a team that uses AI every day.",
   email: "pbozuric@outlook.com",
   github: "https://github.com/p3bozuric",
@@ -10,30 +11,47 @@ export const personalInfo = {
 };
 
 export const aboutMe = {
-  intro: "I deploy AI solutions for clients and own the relationship that gets them into production. I sit between business stakeholders and engineering teams - scoping the real problem, shaping the use case, and translating complex technical concepts for non-technical decision-makers.",
-  description: "I deliver voice and chat agents, automate operational workflows, and drive adoption. I can also build what I propose, prototyping and demoing on production AI stacks myself, so what I bring to clients is working software, not slideware. My maritime background - a Master's in Nautical Studies - lets me bridge traditional industries and cutting-edge AI.",
+  intro: "I get AI adopted. I work with clients and internal teams to find the use cases worth doing, define them, roll them out and support people until AI is part of their daily work. I sit between business stakeholders and engineering, translating business needs into technical requirements and technical concepts for non-technical decision-makers.",
+  // TODO metric: use cases taken to production / teams or users onboarded to AI tools
+  description: "Most of my work is voice AI for customer contact: I integrated ElevenLabs voice agents into a production contact-centre platform and now deliver voice agents for clients from scenario definition to production. I can also build what I propose, so clients see a working proof of concept before they commit. My maritime background - a Master's in Nautical Studies - helps me bridge traditional industries and AI.",
   specialties: [
-    "Deploying AI solutions for clients",
-    "Consulting on AI adoption and internal AI tooling",
-    "Building and delivering voice agents",
-    "Integrating LLMs and AI into existing products and workflows",
-    "Process automation",
-    "Prototyping and demoing on production AI stacks",
+    "AI use case discovery and definition",
+    "Rollout, enablement and team support for AI tools",
+    "Delivering voice AI agents to production",
+    "Presales, proofs of concept and live demos",
+    "Integrating LLMs and RAG into products and workflows",
+    "Process automation and internal AI tooling (MCP)",
   ],
   personal: "I love my wife, cat & horse.",
 };
 
+// Shown as a separate group in the Skills section.
+export const adoptionSkills = [
+  "Use case discovery",
+  "Business value assessment",
+  "Rollout & change management",
+  "Team training & support",
+  "Functional specs",
+  "Presales & PoCs",
+  "Vendor management",
+  "GDPR in AI solutions",
+];
+
 // The first entries are shown while the Skills section is collapsed.
 export const technologies = [
+  { name: "ElevenLabs", category: "AI/ML" },
+  { name: "LiveKit", category: "Real-time" },
+  { name: "Pipecat", category: "Real-time" },
+  { name: "MCP", category: "AI/ML" },
+  { name: "LangGraph", category: "AI/ML" },
+  { name: "RAG", category: "AI/ML" },
+  { name: "n8n", category: "Automation" },
   { name: "Claude Code", category: "AI/ML" },
   { name: "Codex", category: "AI/ML" },
   { name: "Python", category: "Programming" },
   { name: "LangChain", category: "AI/ML" },
-  { name: "ElevenLabs", category: "AI/ML" },
-  { name: "Livekit", category: "Real-time" },
-  { name: "GenAI", category: "AI/ML" },
   { name: "FastAPI", category: "Framework" },
-  { name: "n8n", category: "Automation" },
+  { name: "GenAI", category: "AI/ML" },
   { name: "PostgreSQL", category: "Database" },
   { name: "Docker", category: "DevOps" },
   { name: "PyTorch", category: "AI/ML" },
@@ -45,6 +63,11 @@ export const technologies = [
   { name: "REST API", category: "Backend" },
   { name: "Git", category: "DevOps" },
   { name: "Figma", category: "Design" },
+];
+
+export const languages = [
+  { name: "Croatian", level: "Native" },
+  { name: "English", level: "C1" },
 ];
 
 export const projects = [
@@ -82,40 +105,70 @@ export const workExperience = [
   {
     id: 1,
     role: "AI Consultant",
-    company: "ASEE",
+    company: "ASEE Solutions",
     period: "January 2026 - Present",
     location: "Remote",
     current: true,
     description: [
-      "Advise clients on applying AI to operational and customer-facing workflows.",
-      "Own delivery from prototype to production.",
-      "Consult on internal AI tooling implementations and AI adoption.",
-      "Deliver voice agent solutions for clients.",
+      // TODO metric: number of AI use cases defined / taken to production
+      "Identify and define AI use cases with clients; translate business needs into technical requirements for the dev team.",
+      // TODO metric: employees/teams onboarded, active users of AI tools
+      "Advise on bringing AI tools into employees' daily work and support teams through adoption.",
+      // TODO metric: number of voice agents in production / calls handled per month / containment rate
+      "Deliver voice AI agents for clients, from scenario definition and functional spec to production.",
+      // TODO metric: adoption of AI features on ASEE Live (e.g. share of agents using agent assist, calls transcribed per month)
+      "Coordinate and track AI features on the ASEE Live platform: AI agent assist, AI agent integration, knowledge base, call transcription, post-call analytics.",
+      // TODO metric: number of colleagues using the internal MCP tools / weekly active users
+      "Built internal AI tools (MCP servers) connecting AI assistants to internal business systems; rolled them out to colleagues and supported them.",
+      "Work with AI vendors on technical evaluation, commercial models and GDPR compliance.",
+      "Evaluate alternatives: open-source voice agent frameworks (Pipecat, LiveKit Agents), speech recognition (Faster Whisper), Croatian TTS (fine-tuning XTTS v2).",
+      // TODO metric: proposals / PoCs delivered, conference talks given
+      "Presales: technical consulting, proposals, presentations and proof-of-concept demos; live demos and talks at conferences.",
     ],
   },
   {
     id: 2,
     role: "AI Developer",
-    company: "ASEE",
+    company: "ASEE Solutions",
     period: "March 2025 - December 2025",
     location: "Remote",
     current: false,
     description: [
-      "Integrated ElevenLabs solutions within our products.",
-      "Prepared and ran product demos for prospective clients, presenting AI capabilities to non-technical audiences.",
-      "Built a product documentation deployment on Zensical, with a pipeline to maintain the docs semi-automatically.",
-      "Automated internal business processes (e.g. incoming email classification).",
+      "Integrated ElevenLabs conversational AI and voice agents into the ASEE Live platform.",
+      "Built LLM and RAG-based solutions.",
+      // TODO metric: emails classified/routed per month, accuracy, hours saved
+      "Automated internal processes, e.g. automatic classification and routing of incoming email.",
+      "Built a product documentation system on Zensical with a semi-automated content maintenance process.",
+      // TODO metric: number of product demos run
+      "Prepared and ran product demos for prospects; presented AI capabilities to non-technical audiences.",
     ],
   },
   {
     id: 3,
     role: "Founder",
     company: "KodAI",
-    period: "October 2024 - Present",
+    period: "November 2024 - Present",
     location: "Remote",
     current: true,
     description: [
-      "AI Consultancy",
+      // TODO metric: number of clients / projects delivered
+      "Independent AI consulting and implementation for small and medium businesses.",
+      "Run AI integration and automation projects end to end: needs analysis, build, client communication, delivery.",
+      "Advise on applying LLMs and RAG in business.",
+      // TODO metric: hours saved per month by automations
+      "Business process automation (n8n, Python, REST API integrations).",
+    ],
+  },
+  {
+    id: 4,
+    role: "Intern",
+    company: "AI Center Lipik",
+    period: "April 2024 - September 2024",
+    location: "",
+    current: false,
+    description: [
+      "Computer vision models (object detection and classification in images and video), dataset preparation and labelling.",
+      "LLM/RAG prototypes; Python with PyTorch, Hugging Face and OpenCV.",
     ],
   },
 ];
@@ -145,6 +198,14 @@ export const education = [
     period: "Issued October 2025",
     achievements: [],
     credential: "https://learn.nvidia.com/certificates?id=_T_MZJRQQja79EMSgYTnqA#",
+  },
+  {
+    id: 4,
+    degree: "Ongoing self-directed AI training",
+    field: "LLM engineering, agents and MCP, production deployment",
+    institution: "Self-directed",
+    period: "Ongoing",
+    achievements: [],
   },
 ];
 

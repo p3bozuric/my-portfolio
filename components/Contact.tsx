@@ -46,7 +46,7 @@ export default function Contact() {
         <Card>
           <div className="text-center space-y-6">
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-              I'm always interested in hearing about new projects,
+              I&apos;m always interested in hearing about new projects,
               opportunities and ideas. Whether you have a question or just want to say hi,
               feel free to reach out!
             </p>

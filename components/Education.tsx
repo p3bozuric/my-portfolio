@@ -2,8 +2,14 @@
 
 import SectionWrapper from "./ui/SectionWrapper";
 import Card from "./ui/Card";
-import { education } from "@/data/content";
-import { HiAcademicCap, HiStar, HiClock, HiExternalLink } from "react-icons/hi";
+import { education, languages } from "@/data/content";
+import {
+  HiAcademicCap,
+  HiStar,
+  HiClock,
+  HiExternalLink,
+  HiTranslate,
+} from "react-icons/hi";
 
 export default function Education() {
   return (
@@ -64,6 +70,23 @@ export default function Education() {
             )}
           </Card>
         ))}
+
+        <Card delay={education.length * 0.1}>
+          <div className="flex items-center space-x-2 mb-4">
+            <HiTranslate className="w-6 h-6 text-primary flex-shrink-0" />
+            <h3 className="text-xl font-bold text-foreground">Languages</h3>
+          </div>
+          <div className="flex flex-wrap gap-x-8 gap-y-2">
+            {languages.map((lang) => (
+              <p key={lang.name} className="text-foreground/80">
+                <span className="font-semibold text-primary/80">
+                  {lang.name}
+                </span>{" "}
+                <span className="text-foreground/60">({lang.level})</span>
+              </p>
+            ))}
+          </div>
+        </Card>
       </div>
     </SectionWrapper>
   );

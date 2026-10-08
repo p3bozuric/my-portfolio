@@ -2,7 +2,7 @@
 
 import { personalInfo, navLinks } from "@/data/content";
 import { HiMail } from "react-icons/hi";
-import { FaGithub, FaLinkedin, FaHeart } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const scrollToSection = (href: string) => {
